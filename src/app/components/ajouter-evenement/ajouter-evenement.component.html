@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<div class="form-container">
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+    <h2>Ajouter un événement</h2>
+    
+    <div class="form-field">
+      <label for="titre">Titre</label>
+      <input id="titre" formControlName="titre" type="text" required />
+    </div>
+  
+    <div class="form-field">
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description" required></textarea>
+    </div>
+  
+    <div class="form-field">
+      <label for="date">Date</label>
+      <input id="date" formControlName="date" type="date" required />
+    </div>
+  
+    <div class="form-field">
+      <label for="heure">Heure</label>
+      <input id="heure" formControlName="heure" type="time" required />
+    </div>
+  
+    <div class="form-field">
+      <label for="lieu">Lieu</label>
+      <input id="lieu" formControlName="lieu" type="text" required />
+    </div>
+  
+    <div class="form-field">
+      <label for="categorie">Catégorie</label>
+      <select id="categorie" formControlName="categorie" required>
+        <option value="" disabled selected>Sélectionnez une catégorie</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>    
+    </div>
+  
+    <div class="form-field">
+      <label for="type">Type</label>
+      <select id="type" formControlName="type" required>
+        <option value="" disabled selected>Sélectionnez un type</option>
+        <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="capacity">Capacité</label>
+      <input id="capacity" formControlName="capacity" type="number" required />
+    </div>
+  
+    <div class="form-field">
+      <label for="image">Image</label>
+      <input id="image" formControlName="image" type="file" />
+    </div>
+  
+    <button type="submit">Ajouter l'événement</button>
+  </form>
+</div>

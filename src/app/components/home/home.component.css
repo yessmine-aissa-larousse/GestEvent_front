@@ -1,0 +1,78 @@
+/* Conteneur principal de la page */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  color: #333; /* Texte plus sombre pour le contraste */
+}
+
+/* Titre principal de la page */
+.home-container h2 {
+  color: #742296;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Sous-titre */
+.home-container h4 {
+  color: #E6B8EF;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Style pour la ligne des cartes */
+.row {
+  display: flex;
+  justify-content: space-evenly; /* Répartition égale de l'espace entre les cartes */
+  gap: 30px; /* Espace entre les cartes */
+}
+
+/* Style des cartes */
+.statistic-card {
+  background: linear-gradient(145deg, #742296, #E6B8EF); /* Dégradé pour un effet moderne */
+  color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: all 0.3s ease-in-out;
+  max-width: 320px; /* Taille réduite des cartes */
+  width: 100%;
+  text-align: center;
+}
+
+.statistic-card:hover {
+  transform: translateY(-5px); /* Effet de survol pour un léger soulèvement */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.statistic-card .card-body {
+  padding: 0; /* Enlever le padding pour mieux gérer l'espace */
+}
+
+/* Titre de la carte */
+.statistic-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Texte à l'intérieur des cartes */
+.statistic-card .card-text {
+  font-size: 2.5rem; /* Grande taille pour attirer l'attention */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Conteneur pour les cartes afin d'ajuster la taille */
+.statistic-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}

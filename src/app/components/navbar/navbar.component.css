@@ -1,0 +1,30 @@
+/* Couleur de fond de la navbar */
+.navbar {
+  background-color: #742296;
+}
+
+/* Texte des liens à gauche */
+.navbar-nav .nav-link {
+  color: #F5F5F5 !important;
+  font-weight: bold;
+}
+
+/* Texte du titre de la navbar */
+.navbar-brand {
+  color: #F5F5F5 !important;
+  font-weight: bold;
+}
+
+/* Bouton Déconnexion */
+.btn-deconnexion {
+  background-color: #E6B8EF;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.btn-deconnexion:hover {
+  background-color: #D8A3E2; /* Changer la couleur du bouton au survol */
+}

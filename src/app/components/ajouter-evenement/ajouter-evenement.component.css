@@ -1,0 +1,96 @@
+/* Conteneur du formulaire */
+.form-container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Titre du formulaire */
+.form-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #742296;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Style des champs de formulaire */
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #742296;
+  text-transform: capitalize;
+}
+
+/* Style des inputs, textarea, select */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #742296;
+  box-shadow: 0 0 8px rgba(116, 34, 150, 0.4);
+}
+
+/* Style du textarea */
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Style du bouton */
+button {
+  background-color: #742296;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+button:hover {
+  background-color: #5a1d76;
+  transform: scale(1.05);
+}
+
+/* Effet sur le bouton lorsque désactivé */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style des inputs pour le fichier */
+input[type="file"] {
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #fff;
+}
+
+/* Marge pour le dernier champ */
+.form-field:last-of-type {
+  margin-top: 30px;
+}

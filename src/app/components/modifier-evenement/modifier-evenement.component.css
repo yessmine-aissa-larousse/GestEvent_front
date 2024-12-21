@@ -1,0 +1,70 @@
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px; /* Pour arrondir les bords */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Pour ajouter une ombre */
+}
+
+form div {
+  margin-bottom: 20px; /* Augmenter l'espacement entre les champs */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px; /* Ajuster la marge sous le label */
+  color: #555;
+}
+
+input, textarea, select {
+  width: 100%;
+  height: 50px; /* Augmenter la hauteur des champs */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Arrondir les bords des champs */
+  outline: none;
+  margin-top: 8px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #742296; /* Couleur de la bordure au focus */
+  box-shadow: 0 0 4px rgba(116, 34, 150, 0.5); /* Ombre au focus */
+}
+
+textarea {
+  resize: vertical;
+  height: 120px; /* Ajuster la hauteur du textarea */
+}
+
+button {
+  background-color: #742296; /* Couleur du bouton */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px; /* Marge au-dessus du bouton */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5e1e8f; /* Couleur du bouton au survol */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+div:last-of-type {
+  margin-top: 20px;
+}

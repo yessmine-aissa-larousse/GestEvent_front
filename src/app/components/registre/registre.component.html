@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="registre-list">
+  <h2>Liste des Inscriptions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Utilisateur</th>
+        <th>Événement</th>
+        <th>Date d'Inscription</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let inscription of inscriptions">
+        <td>{{ inscription.id }}</td>
+        <td>{{ inscription.utilisateur }}</td>
+        <td>{{ inscription.evenement }}</td>
+        <td>{{ inscription.dateInscription | date: 'yyyy-MM-dd HH:mm' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

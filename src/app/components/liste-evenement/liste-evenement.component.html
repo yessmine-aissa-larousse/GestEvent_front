@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="events-page-container">
+  <h1>Liste des Événements</h1>
+   <div class="filter-bar">
+    <input
+      type="text"
+      placeholder="Rechercher par titre ou type"
+      [(ngModel)]="textDeRecherche"
+      (input)="filterEvents()"
+      class="filter-input"
+    />
+  </div>
+  <div class="event-cards-container">
+    <div *ngFor="let event of events" class="event-card">
+      <div class="event-card-header">
+        <h3>{{ event.titre }}</h3>
+        <p class="event-date">{{ event.date | date:'dd MMMM yyyy' }}</p>
+      </div>
+      <p><strong>Description :</strong> {{ event.description }}</p>
+      <p><strong>Lieu :</strong> {{ event.lieu }}</p>
+      <!--<p><strong>Catégorie :</strong> {{ event.categorie }}</p>-->
+      <p><strong>Type :</strong> {{ event.type }}</p>
+      <div class="event-card-buttons">
+        <button (click)="archiver(event.id)" class="archive-btn">Archiver</button>
+        <button [routerLink]="['/modifier-event', event.id]" class="edit-btn">Modifier</button>
+      </div>
+    </div>
+  </div>
+</div>

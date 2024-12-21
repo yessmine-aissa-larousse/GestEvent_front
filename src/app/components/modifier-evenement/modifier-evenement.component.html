@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<div class="container mt-4">
+  <h2>Modifier l'événement</h2>
+  <form [formGroup]="editEventForm" (ngSubmit)="updateEvent()">
+    <div class="mb-3">
+      <label for="titre" class="form-label">Titre</label>
+      <input id="titre" formControlName="titre" type="text" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea id="description" formControlName="description" class="form-control" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="date" class="form-label">Date</label>
+      <input id="date" formControlName="date" type="date" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="heure" class="form-label">Heure</label>
+      <input id="heure" formControlName="heure" type="time" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="lieu" class="form-label">Lieu</label>
+      <input id="lieu" formControlName="lieu" type="text" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="categorie" class="form-label">Catégorie</label>
+      <select id="categorie" formControlName="categorie" class="form-select" required>
+        <option value="" disabled selected>Sélectionnez une catégorie</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="type" class="form-label">Type</label>
+      <select id="type" formControlName="type" class="form-select" required>
+        <option value="" disabled selected>Sélectionnez un type</option>
+        <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="capacity" class="form-label">Capacité</label>
+      <input id="capacity" formControlName="capacity" type="number" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Image</label>
+      <input id="image" formControlName="image" type="file" class="form-control" />
+    </div>
+
+    <!--<div class="mb-3">
+      <label class="form-label">Statut</label>
+      <div>
+        <input type="radio" id="archiver" formControlName="archived" [value]="true" />
+        <label for="archiver">Archiver</label>
+      </div>
+      <div>
+        <input type="radio" id="dearchiver" formControlName="archived" [value]="false" />
+        <label for="dearchiver">Déarchiver</label>
+      </div>
+    </div>-->
+
+    <button type="submit" class="btn btn-primary">Mettre à jour</button>
+  </form>
+</div>

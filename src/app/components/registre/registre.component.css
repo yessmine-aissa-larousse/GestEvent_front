@@ -1,0 +1,52 @@
+.registre-list {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .registre-list h2 {
+    text-align: center;
+    color: #742296;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  th {
+    background-color: #742296;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #E6B8EF;
+  }
+  
+  tbody tr:hover {
+    background-color: #d0a7db;
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  td:last-child {
+    font-weight: bold;
+  }
+  
